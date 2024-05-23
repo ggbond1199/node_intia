@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function password_protect() {
-    local USER_PASSWORD="initia321"  # 设置密码，实际使用时应更安全地处理
+    local USER_PASSWORD="i321"  # 设置密码，实际使用时应更安全地处理
     read -sp "请输入密码以继续: " input_password  # 提示用户输入密码
     echo
     if [ "$input_password" != "$USER_PASSWORD" ]; then
